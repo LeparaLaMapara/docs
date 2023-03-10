@@ -1,8 +1,10 @@
-_____
-# How to create your python package
+________________
+# How to create python package
 _________________
-This is a template for creating a python package
 
+This is a skeleton template for creating a Python package.
+
+_______
 ## How to do it?
 _______
 
@@ -62,7 +64,7 @@ In **my_module/__init__.py**, you can import your module's functions and classes
 from .module_func   tions import my_function, MyClass
 ```
 
-In my_module/module_functions.py, you can define your module's functions and classes:
+In **my_module/module_functions.py**, you can define your module's functions and classes:
 
 ```python
 import numpy as np
@@ -140,19 +142,19 @@ Here are the steps to publish your Python module to PyPI:
     pip install twine setuptools
     ```
 
-2. In your module's root directory, create a `**setup.py**` file that contains information about your module and its dependencies, as well as instructions for installation using pip. See the example code in my previous answer for a skeleton `**setup.py**` file.
+2. In your module's root directory, create a `setup.py` file that contains information about your module and its dependencies, as well as instructions for installation using pip. See the example code in my previous answer for a skeleton `setup.py` file.
 
 3. In your terminal, navigate to your module's root directory and run the following command to create a source distribution package:
     ``` 
     python setup.py sdist
     ```
-    This will create a `**.tar.gz**` file in the `**dist**` directory.
+    This will create a `.tar.gz` file in the `dist` directory.
 
 4. Run the following command to create a wheel distribution package:
     ```
     python setup.py bdist_wheel
     ```
-    This will create a `**.whl**` file in the `**dist**` directory.
+    This will create a `.whl` file in the `dist` directory.
 
 5. Verify that your distribution packages are valid by running the following command:
     ```
@@ -173,4 +175,5 @@ Once you have successfully published your module to PyPI, users can install it u
 pip install my_module
 ```
 
-where `**my_module**` is the name of your module as specified in your `**setup.py**` file.
+where **my_module** is the name of your module as specified in your **setup.py** file.
+
