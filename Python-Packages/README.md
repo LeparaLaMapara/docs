@@ -15,7 +15,6 @@ Here is a skeleton code for writing a Python module that can be installed using 
         my_module/
             __init__.py
             module_functions.py
-
     ```
 
 - **README.md**: A file that describes your module, including its purpose and usage.
@@ -27,8 +26,7 @@ Here is a skeleton code for writing a Python module that can be installed using 
 
 In **setup.py**, you will need to include the following code:
 
-    ``` python
-
+    ```python
         from setuptools import setup, find_packages
 
         setup(
